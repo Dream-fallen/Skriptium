@@ -58,4 +58,4 @@ require(skbee) with priority 2
 ```
 ---
 
-## This project is licensed under the MIT License.
+# This project is licensed under the MIT License.
