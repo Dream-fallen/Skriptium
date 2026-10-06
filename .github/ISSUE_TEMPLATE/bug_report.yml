@@ -1,0 +1,41 @@
+name: "Bug Report"
+description: Report a bug, syntax issue, or unexpected behavior in Skriptium.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: E.g., The parser throws an error when using nested loops...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Code Snippet / Reproduction Steps
+      description: Provide the Skriptium code or steps required to reproduce the behavior.
+      placeholder: |
+        # Provide code here
+        if player is online:
+            ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console Logs / Error Messages
+      description: Paste any relevant console errors or stack traces here.
+      render: shell
