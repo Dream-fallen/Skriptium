@@ -1,7 +1,7 @@
 name: "Syntax Proposal"
 description: Propose a new syntax rule or language feature for Skriptium.
 title: "[Syntax]: "
-labels: ["enhancement", "syntax-proposal"]
+labels: ["syntax-proposal"]
 body:
   - type: input
     id: feature_name
