@@ -1,0 +1,36 @@
+name: "Syntax Proposal"
+description: Propose a new syntax rule or language feature for Skriptium.
+title: "[Syntax]: "
+labels: ["enhancement", "syntax-proposal"]
+body:
+  - type: input
+    id: feature_name
+    attributes:
+      label: Feature Name
+      description: What is the name of the feature or rule you are proposing?
+      placeholder: e.g., For-Each Loops, Async Events
+    validations:
+      required: true
+  - type: textarea
+    id: py_syntax
+    attributes:
+      label: Proposed Python Style (`using py`)
+      description: How should this look using indentation?
+      placeholder: "for player in all players:\n    send 'Hello' to player"
+    validations:
+      required: true
+  - type: textarea
+    id: js_syntax
+    attributes:
+      label: Proposed JS Style (`using js`)
+      description: How should this look using curly braces?
+      placeholder: "for (player of all_players) {\n    send('Hello', player);\n}"
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why is this better than normal Skript?
+      description: Explain how this improves the developer experience or removes redundancy.
+    validations:
+      required: true
