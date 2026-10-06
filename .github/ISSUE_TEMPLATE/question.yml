@@ -1,0 +1,26 @@
+name: "Question / Support"
+description: Ask a question or get help with using Skriptium.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to achieve?
+      description: Describe what you want your script to do.
+    validations:
+      required: true
+  - type: textarea
+    id: attempt
+    attributes:
+      label: What have you tried so far?
+      description: Paste the code you've written or describe the steps you took.
+    validations:
+      required: true
+  - type: textarea
+    id: confusion
+    attributes:
+      label: What specifically is confusing?
+      description: Is it the `require` system, the `py/js` choice, or something else?
+    validations:
+      required: true
