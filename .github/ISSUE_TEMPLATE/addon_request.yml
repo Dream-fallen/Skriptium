@@ -1,0 +1,29 @@
+name: "Addon Port Request"
+description: Request that a specific Skript addon be ported to a Skriptium module.
+title: "[Addon]: "
+labels: ["enhancement", "addon-request"]
+body:
+  - type: input
+    id: addon_name
+    attributes:
+      label: Addon Name
+      description: Which addon are you requesting?
+      placeholder: e.g., SkBee, Skellet
+    validations:
+      required: true
+  - type: textarea
+    id: essential_features
+    attributes:
+      label: Essential Features
+      description: Which specific parts of this addon are the most important to port?
+      placeholder: e.g., NBT support, Scoreboard management
+    validations:
+      required: true
+  - type: input
+    id: docs_link
+    attributes:
+      label: Documentation Link
+      description: Provide a link to the official documentation for this addon.
+      placeholder: https://skunity.com/docs/...
+    validations:
+      required: false
