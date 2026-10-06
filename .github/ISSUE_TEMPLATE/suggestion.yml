@@ -1,7 +1,7 @@
 name: "Suggestion"
 description: Suggest an idea, new syntax rule, or improvement for Skriptium.
 title: "[Feature]: "
-labels: ["enhancement"]
+labels: ["feature", "idea"]
 body:
   - type: textarea
     id: problem
