@@ -1,7 +1,7 @@
 name: "Addon Port Request"
 description: Request that a specific Skript addon be ported to a Skriptium module.
 title: "[Addon]: "
-labels: ["enhancement", "addon-request"]
+labels: ["addon-port"]
 body:
   - type: input
     id: addon_name
