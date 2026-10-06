@@ -2,7 +2,7 @@
 
 **Skriptium** is a complete overhaul of the Skript plugin language. It replaces Skript's english like syntax with a language inspired by **Python** and **JavaScript**.
 
-**NOTE:** Skriptium is **NOT** backwards compatible with normal Skript. Certain redundant syntax has beenremoved.
+**NOTE:** Skriptium is **NOT** backwards compatible with normal Skript. Certain redundant syntax has been removed.
 
 ## Getting started
 
