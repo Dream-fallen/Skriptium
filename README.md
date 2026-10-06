@@ -56,12 +56,6 @@ require(skbee) with priority 2
 
 // If TuSKe and SkBee share a syntax rule, TuSKe overrides it
 ```
-
-# Specifications (ver 1.0.0.0)
-
-1. All script files must terminate in `.skm`.
-2. The first non-comment line of any `.skm` file must strictly match `^using (py|js)$`. If missing or invalid, you make the compiler and yourself sad.
-
 ---
 
 ## This project is licensed under the MIT License.
