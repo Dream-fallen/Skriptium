@@ -33,6 +33,6 @@ When you are happy with your changes:
 ## Project Guidelines
 - **Read the Specs:** Before adding a feature, check `specifications.md` to make sure it fits the Skriptium logic.
 - **Be Kind:** We are all learning here. Be helpful and patient with others.
-- **Simplicity First:** If a feature makes the language too complicated, we might decide not to include it.
+- **Simplicity First:** If a feature makes the language too complicated, I might decide not to include it.
 
 **Happy Coding!**
