@@ -57,4 +57,4 @@ require(skbee) with priority 2
 // If TuSKe and SkBee share a syntax rule, TuSKe overrides it
 ```
 ---
-# This project is licensed under the MIT License.
+# This project is proudly licensed under the MIT License.
