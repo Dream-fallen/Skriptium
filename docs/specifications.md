@@ -42,3 +42,42 @@ The following addons will be implemented as native Skriptium modules:
 - skRayFall
 - TuSKe
 - SkBee
+
+## Grammar (EBNF)
+The following EBNF describes the core syntax required by this specification. It is intentionally compact and focuses on the file-level constructs (syntax declaration and module requiring). Terminals are written in quotes. Lowercase names are non-terminals.
+
+```
+EBNF ::= file
+
+file ::= syntax_declaration { module_decl } { statement }
+
+syntax_declaration ::= "using" "py" | "using" "js"
+
+module_decl ::= "require" "(" MODULE_NAME ")" [ modifier ]
+
+modifier ::= alias_modifier | priority_modifier
+alias_modifier ::= "with" "alias" STRING
+priority_modifier ::= "with" "priority" PRIORITY
+
+MODULE_NAME ::= IDENT | STRING
+IDENT ::= letter { letter | digit | '_' | '-' }
+STRING ::= '"' { any_char_except_quote } '"' | '\'' { any_char_except_quote } '\''
+PRIORITY ::= "1" | "2" | "3" | "4" | "5"
+
+statement ::= any_text_until_eol_or_block
+
+any_text_until_eol_or_block ::= /* placeholder for language-specific statements provided by modules or the core language. */
+
+letter ::= /* A-Z a-z */
+
+digit ::= /* 0-9 */
+
+```
+
+Notes:
+- The `syntax_declaration` must appear exactly once at the top of the file; parsers should treat its absence as a syntax error.
+- `module_decl` entries may appear multiple times; each `require` must precede usage of that module's syntax.
+- The `modifier` is optional and may be either an alias or a priority (but not both). Implementations should validate this constraint.
+- `statement` is intentionally underspecified here: module authors provide their own grammars for added syntax, which are composed into the main grammar after `require`-time resolution.
+
+If you'd like, I can expand this into a full BNF covering core expressions, blocks for both `py` and `js` modes, and a concrete token specification (lexical grammar).
