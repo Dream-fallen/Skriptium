@@ -1,6 +1,6 @@
 # Skriptium
 
-**Skriptium** is a complete overhaul of the Skript plugin language. It replaces Skript's english like syntax with a language inspired by **Python** and **JavaScript**.
+**Skriptium** is a complete overhaul of the [Skript](https://github.com/skriptlang/skript) plugin language. It replaces Skript's english like syntax with a language inspired by **Python** and **JavaScript**.
 
 **NOTE:** Skriptium is **NOT** backwards compatible with normal Skript. Certain redundant syntax has been removed. Skriptium requires the Paper server core on a Minecraft server running versions 1.21.x or above.
 
