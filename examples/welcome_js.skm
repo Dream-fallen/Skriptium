@@ -1,1 +1,7 @@
+using js
+require(skellet)
 
+on join() {
+    let player = event.player;
+    player.sendMessage("Welcome to the server!");
+}
