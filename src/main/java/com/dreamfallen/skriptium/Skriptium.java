@@ -1,7 +1,6 @@
 package com.dreamfallen.skriptium;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import java.io.File;
 
 public class Skriptium extends JavaPlugin {
 
@@ -11,20 +10,16 @@ public class Skriptium extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        
-        // 1. Create the plugin folder automatically if it doesn't exist
+
         if (!getDataFolder().exists()) {
             getDataFolder().mkdirs();
         }
 
-        // 2. Initialize the custom engine and file manager
-        this.scriptManager = new ScriptManager();
-        
-        // 3. Register our core event listener to handle "on join", etc.
+        this.scriptManager = new ScriptManager(this);
+
         getServer().getPluginManager().registerEvents(new ScriptEventListener(this), this);
 
-        // 4. Load all .skm files from the plugin directory
-        this.scriptManager.loadAllScripts(getDataFolder());
+        this.scriptManager.loadScripts();
 
         getLogger().info("Skriptium Engine successfully initialized.");
     }
