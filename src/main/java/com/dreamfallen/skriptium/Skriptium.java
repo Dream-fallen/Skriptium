@@ -1,4 +1,4 @@
-package com.dream_fallen.skriptium;
+package com.dreamfallen.skriptium;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
