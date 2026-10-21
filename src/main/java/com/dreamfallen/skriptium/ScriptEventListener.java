@@ -14,7 +14,7 @@ public class ScriptEventListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        // This acts as the bridge to pass 'event.player' data to the parsed '.skm' files
-        // logic will hook into plugin.getScriptManager() here later
+        plugin.getLogger().info("Player joined: " + event.getPlayer().getName());
+        // TODO: trigger any "on join" script handlers here
     }
 }
