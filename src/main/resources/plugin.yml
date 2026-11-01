@@ -1,6 +1,6 @@
 name: Skriptium
 version: 1.0.0
-main: com.dream_fallen.skriptium.Skriptium
+main: com.dreamfallen.skriptium.Skriptium
 api-version: '1.21'
 author: Dream-fallen
 description: An overhaul of the Skript language using Python/JS style syntax.
